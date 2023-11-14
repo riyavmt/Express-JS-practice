@@ -24,13 +24,17 @@ main {
 .main-header-list {
     list-style: none;
     margin: 0;
+    margin-right: 10 px;
     padding: 0;
     display: flex;
+    flex-direction: column;
 }
 
-.main-header-item {
+.main-header-items {
     margin: 0 1rem;
     padding: 0;
+    
+    display: flex;
 }
 
 .main-header-item a {
