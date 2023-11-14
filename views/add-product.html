@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styleform.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href = "/">Shop</a></li>
-                <li><a href="/admin/add-product">Add Products</li>
+    <header class="main-header">
+        <nav class ="main-header-nav" >
+            <ul class = "main-header-list">
+                <li class = "main-header-items"><a href = "/">Shop</a></li>
+                <li class = "main-header-items"><a href="/admin/add-product">Add Products</li>
+                <li class = "main-header-items"><a href = "/contact-us">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action = "/admin/add-product" method="POST">
+        <form id = "My-Form"action = "/admin/add-product" method="POST">
             <label for="name">Product name</label>
             <input type="text" id = "name" name="name">
             <button type="submit">Add Product</button>
