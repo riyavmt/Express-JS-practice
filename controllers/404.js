@@ -1,5 +1,3 @@
 exports.get404Page = (req,res)=>{
-    res.status(400).render('404',{
-      pageTitle:'Error 404',
-    });
-  }
+    res.status(404).send('<h1>Error 404 not found</h1>');
+};

@@ -20,13 +20,13 @@ app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(contactRoutes);
 
-
-app.use(errorController.get404Page);
-
-
 app.post('/success',(req,res)=>{
   res.status(200).send('<h1>Form Submitted Successfully!</h1>');
 })
+app.use(errorController.get404Page);
+
+
+
 
 
 app.listen(3000);
